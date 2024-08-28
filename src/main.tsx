@@ -1,14 +1,18 @@
 // outsource dependencies
 import { StrictMode } from 'react';
+import { Provider } from 'react-redux';
 import { createRoot } from 'react-dom/client';
 
 // local dependencies
 import App from './App.tsx';
+import store from './store';
 
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </StrictMode>
 );
