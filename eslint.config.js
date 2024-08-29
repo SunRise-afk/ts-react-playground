@@ -146,10 +146,10 @@ export default tseslint.config(
         }],
         // "import/no-unresolved": ["warn", { "ignore": ["../extensiton/*"] }], TEST
         // "import/named": ["error"], TEST
-        // "react/prop-types":["error"], TEST
         // "react/no-unused-prop-types": ["error"], TEST
         // "react/require-default-props": ["off"],
         // "react/default-props-match-prop-types": ["warn"], TEST
+        "react/prop-types":["off"],
         "react/no-unused-state": ["warn"],
         "react/prefer-stateless-function": ["warn", { "ignorePureComponents": true }],
         "react/react-in-jsx-scope": "off",

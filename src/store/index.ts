@@ -2,8 +2,14 @@
 import thunk from 'redux-thunk';
 import { applyMiddleware, legacy_createStore as createStore, combineReducers } from 'redux';
 
-const reducers = combineReducers({
-  counter: () => 1,
+import appReducer, { State as appState } from '@/app/controller.ts';
+
+export interface StoreState {
+  app: appState
+}
+
+const reducers = combineReducers<StoreState>({
+  app: appReducer,
 });
 
 const store = createStore(reducers, applyMiddleware(thunk));

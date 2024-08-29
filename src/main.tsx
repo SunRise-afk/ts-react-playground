@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { createRoot } from 'react-dom/client';
 
 // local dependencies
-import App from './App.tsx';
 import store from './store';
+import { App } from '@/app';
 
 import './index.css';
 
