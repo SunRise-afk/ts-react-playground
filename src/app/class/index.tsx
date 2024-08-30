@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 // local dependencies
 import { StoreState } from '@/store';
-import { Todo, fetchTodos, deleteTodo } from '@/app/controller.ts';
+import { Todo, fetchTodos, deleteTodo } from '@/app/class/controller.ts';
 
 // configure
 interface AppProps {

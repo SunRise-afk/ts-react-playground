@@ -2,7 +2,7 @@
 import thunk from 'redux-thunk';
 import { applyMiddleware, legacy_createStore as createStore, combineReducers } from 'redux';
 
-import appReducer, { State as appState } from '@/app/controller.ts';
+import appReducer, { State as appState } from '@/app/class/controller.ts';
 
 export interface StoreState {
   app: appState
