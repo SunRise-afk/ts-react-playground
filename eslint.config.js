@@ -34,6 +34,7 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+        "@typescript-eslint/no-explicit-any": ["warn"],
         "yoda": ["error"],
         "curly": ["warn", "all"],
         "eqeqeq": ["warn", "smart"],

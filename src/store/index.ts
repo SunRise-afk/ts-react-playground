@@ -2,16 +2,16 @@
 import thunk from 'redux-thunk';
 import { applyMiddleware, legacy_createStore as createStore, combineReducers } from 'redux';
 
-import appReducer, { State as appState } from '@/app/class/controller.ts';
+import appReducer from '@/app/class/controller.ts';
+import funcReducer from '@/app/func-redux/controller.ts';
 
-export interface StoreState {
-  app: appState
-}
-
-const reducers = combineReducers<StoreState>({
+const reducers = combineReducers({
   app: appReducer,
+  func: funcReducer,
 });
 
 const store = createStore(reducers, applyMiddleware(thunk));
+
+export type RootState = ReturnType<typeof reducers>;
 
 export default store;

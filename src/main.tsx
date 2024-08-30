@@ -5,7 +5,7 @@ import { createRoot } from 'react-dom/client';
 
 // local dependencies
 import store from './store';
-import { App } from '@/app/func';
+import { App } from '@/app/func-redux';
 
 import './index.css';
 
